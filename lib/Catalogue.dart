@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // import 'package:freds_coffeshop/History.dart';
 // import 'package:freds_coffeshop/NewOrder.dart';
 // import 'package:freds_coffeshop/Flowers.dart';
-import 'package:freds_coffeshop/Cart.dart';
+// import 'package:freds_coffeshop/Cart.dart';
 // import 'package:freds_coffeshop/OrderSummary.dart';
 import 'package:freds_coffeshop/Contact.dart';
 import 'package:freds_coffeshop/Social.dart';
@@ -75,10 +75,21 @@ class CatalogueScreenState extends State<CatalogueScreen> {
           children: <Widget>[
             ListTile(
               contentPadding: const EdgeInsets.symmetric(vertical: 40.0),
-              leading: Image.network(
-                'https://www.mobiustrimmer.com/wp-content/uploads/2018/11/F-flower-200x200.jpg',
-                width: 100.0,
-                height: 100.0,
+              leading: Stack(
+                alignment: Alignment.bottomRight,
+                children: <Widget>[
+                  Image.network(
+                    'https://www.mobiustrimmer.com/wp-content/uploads/2018/11/F-flower-200x200.jpg',
+                    width: 100.0,
+                    height: 100.0,
+                  ),
+                  IconButton(
+                    highlightColor: Colors.deepOrange,
+                    color: Colors.deepOrangeAccent[400],
+                    icon: Icon(Icons.add),
+                    onPressed: () {},
+                  ),
+                ],
               ),
               title: Text('Sour Diesel - Sativa-dominant veriety'),
               // onTap: () {
@@ -87,40 +98,80 @@ class CatalogueScreenState extends State<CatalogueScreen> {
               // },
             ),
             ListTile(
-              leading: Image.network(
-                'https://www.blackdogled.com/media/Gallery/Bud_Pics/thumbnails/Bud_Pics_small-2.jpg',
-                width: 100.0,
-                height: 100.0,
+              leading: Stack(
+                alignment: Alignment.topRight,
+                children: <Widget>[
+                  Image.network(
+                    'https://www.blackdogled.com/media/Gallery/Bud_Pics/thumbnails/Bud_Pics_small-2.jpg',
+                    width: 100.0,
+                    height: 100.0,
+                  ),
+                  IconButton(
+                    highlightColor: Colors.deepOrange,
+                    icon: Icon(Icons.add),
+                    onPressed: () {},
+                  ),
+                ],
               ),
               title: Text(
                   'Lemon Haze - one of the most popular sativa strains in America'),
               contentPadding: const EdgeInsets.symmetric(vertical: 40.0),
             ),
             ListTile(
-              leading: Image.network(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTh_xjmKF_iSN99dmsmt8iSnfxg3b9otjrO9R_Y9elik6H0wRb',
-                width: 100.0,
-                height: 100.0,
+              leading: Stack(
+                alignment: Alignment.topRight,
+                children: <Widget>[
+                  Image.network(
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTh_xjmKF_iSN99dmsmt8iSnfxg3b9otjrO9R_Y9elik6H0wRb',
+                    width: 100.0,
+                    height: 100.0,
+                  ),
+                  IconButton(
+                    highlightColor: Colors.deepOrange,
+                    icon: Icon(Icons.add),
+                    onPressed: () {},
+                  ),
+                ],
               ),
               title: Text(
                   'Green Crack - well-loved for its ability to help sharpen focus'),
               contentPadding: const EdgeInsets.symmetric(vertical: 40.0),
             ),
             ListTile(
-              leading: Image.network(
-                'https://moldresistantstrains.com/wp-content/uploads/2018/11/white-widow-autoflower-cannabis-seeds-usa.jpg',
-                width: 100.0,
-                height: 100.0,
+              leading: Stack(
+                alignment: Alignment.topRight,
+                children: <Widget>[
+                  Image.network(
+                    'https://moldresistantstrains.com/wp-content/uploads/2018/11/white-widow-autoflower-cannabis-seeds-usa.jpg',
+                    width: 100.0,
+                    height: 100.0,
+                  ),
+                  IconButton(
+                    highlightColor: Colors.deepOrange,
+                    icon: Icon(Icons.add),
+                    onPressed: () {},
+                  ),
+                ],
               ),
               title: Text(
                   'Strawberry Cough - sought out for its ability to help you improve your mood'),
               contentPadding: const EdgeInsets.symmetric(vertical: 40.0),
             ),
             ListTile(
-              leading: Image.network(
-                'https://i.pinimg.com/236x/d0/d0/10/d0d010daa82869f425b70fbcc9c2e252--medical-marijuana-cannabis.jpg',
-                width: 100.0,
-                height: 100.0,
+              leading: Stack(
+                alignment: Alignment.topRight,
+                children: <Widget>[
+                  Image.network(
+                    'https://i.pinimg.com/236x/d0/d0/10/d0d010daa82869f425b70fbcc9c2e252--medical-marijuana-cannabis.jpg',
+                    width: 100.0,
+                    height: 100.0,
+                  ),
+                  IconButton(
+                    highlightColor: Colors.deepOrange,
+                    icon: Icon(Icons.add),
+                    onPressed: () {},
+                  ),
+                ],
               ),
               title: Text(
                   'Jack Herer - Named after cannabis activist and author Jack Herer'),
